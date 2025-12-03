@@ -73,3 +73,94 @@ h6 {
 #__next {
 	isolation: isolate;
 }
+
+.container {
+	width: 1440px;
+	max-width: 1440px;
+	padding-inline: 1rem;
+	margin: 0 auto;
+}
+
+html {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding-block: 2rem;
+	color: #fff;
+}
+
+.logo {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.menu-nav {
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.hero {
+	background: url("../img/hero-bg.png") no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 48rem;
+}
+
+.hero-tagline {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	max-width: 60rem;
+	padding-block: 12rem;
+}
+
+.btn {
+	padding: 0.75rem 1.25rem;
+	border-radius: 0.5rem;
+	background-color: #fff;
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+		background-color: #ececec;
+	}
+}
+
+footer {
+	background-color: #171717;
+	color: #a1a1a1;
+}
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	padding-block: 4rem;
+	gap: 2rem;
+}
+
+.footer-container ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-column h5 {
+	color: #fff;
+}
+
+.copyright {
+	padding-block: 1rem;
+}
