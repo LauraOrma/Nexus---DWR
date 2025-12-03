@@ -93,6 +93,14 @@ header {
 	color: #fff;
 }
 
+.wrapper {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+}
+
 .logo {
 	display: flex;
 	gap: 0.5rem;
@@ -105,6 +113,9 @@ header {
 	a {
 		color: #fff;
 		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -140,10 +151,23 @@ header {
 	}
 }
 
+main {
+	padding-block: 1rem;
+	flex-grow: 1;
+}
+
 footer {
 	background-color: #171717;
 	color: #a1a1a1;
+	a {
+		color: #a1a1a1;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
+
 .footer-container {
 	display: flex;
 	justify-content: space-between;
@@ -159,6 +183,11 @@ footer {
 
 .footer-column h5 {
 	color: #fff;
+}
+
+.footer-column__highlight {
+	color: #ffb900;
+	padding-block: 1rem;
 }
 
 .copyright {
