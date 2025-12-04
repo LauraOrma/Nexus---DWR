@@ -58,6 +58,28 @@
 }
 
 /* Media Queries para responsive */
+
+/* Tablets y pantallas medianas */
+@media screen and (max-width: 1024px) {
+	.menu-nav {
+		gap: 0.75rem;
+	}
+
+	.menu-nav a {
+		font-size: 0.9rem;
+	}
+
+	.footer-container {
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	.footer-column {
+		flex: 1 1 45%;
+	}
+}
+
+/* Tablets pequeñas y móviles grandes */
 @media screen and (max-width: 768px) {
 	html, body {
 		overflow-x: hidden;
