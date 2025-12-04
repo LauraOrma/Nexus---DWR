@@ -1,0 +1,134 @@
+/* ==================== */
+/* MENÚ RESPONSIVE      */
+/* ==================== */
+
+/* Botón hamburguesa - oculto en desktop */
+.menu-toggle {
+	display: none;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+	z-index: 1001;
+	width: 40px;
+	height: 40px;
+}
+
+.hamburger {
+	display: block;
+	width: 24px;
+	height: 2px;
+	background-color: #fff;
+	position: relative;
+	transition: background-color 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 2px;
+	background-color: #fff;
+	left: 0;
+	transition: transform 0.3s ease, top 0.3s ease;
+}
+
+.hamburger::before {
+	top: -8px;
+}
+
+.hamburger::after {
+	top: 8px;
+}
+
+/* Animación cuando el menú está abierto */
+.menu-toggle.active .hamburger {
+	background-color: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.menu-toggle.active .hamburger::after {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+/* Media Queries para responsive */
+@media screen and (max-width: 768px) {
+	html, body {
+		overflow-x: hidden;
+	}
+
+	.container {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	.menu-toggle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.menu {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.95);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: right 0.3s ease;
+		z-index: 1000;
+	}
+
+	.menu.active {
+		right: 0;
+	}
+
+	.menu-nav {
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.menu-nav a {
+		font-size: 1.5rem;
+	}
+
+	header {
+		position: relative;
+		z-index: 1002;
+	}
+
+	.footer-container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.hero {
+		height: auto;
+		min-height: auto;
+	}
+
+	.hero-tagline {
+		padding: 4rem 1rem;
+		text-align: center;
+	}
+
+	.hero-tagline h1 {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.menu-nav a {
+		font-size: 1.25rem;
+	}
+}
