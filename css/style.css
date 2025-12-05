@@ -2,26 +2,26 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* 2. Remove default margin */
 * {
-	margin: 0;
+    margin: 0;
 }
 
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
-	html {
-		interpolate-size: allow-keywords;
-	}
+    html {
+        interpolate-size: allow-keywords;
+    }
 }
 
 body {
-	/* 4. Add accessible line-height */
-	line-height: 1.5;
-	/* 5. Improve text rendering */
-	-webkit-font-smoothing: antialiased;
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
 }
 
 /* 6. Improve media defaults */
@@ -30,8 +30,8 @@ picture,
 video,
 canvas,
 svg {
-	display: block;
-	max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
@@ -39,7 +39,7 @@ input,
 button,
 textarea,
 select {
-	font: inherit;
+    font: inherit;
 }
 
 /* 8. Avoid text overflows */
@@ -50,20 +50,21 @@ h3,
 h4,
 h5,
 h6 {
-	overflow-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* 9. Improve line wrapping */
 p {
-	text-wrap: pretty;
+    text-wrap: pretty;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	text-wrap: balance;
+    text-wrap: balance;
 }
 
 /*
@@ -71,125 +72,269 @@ h6 {
 */
 #root,
 #__next {
-	isolation: isolate;
+    isolation: isolate;
 }
 
 .container {
-	width: 100%;
-	max-width: 1440px;
-	padding-inline: 1rem;
-	margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    padding-inline: 1rem;
+    margin: 0 auto;
 }
 
 html {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
-	padding-block: 2rem;
-	color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-block: 2rem;
+    color: #fff;
 }
 
 .wrapper {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .logo {
-	display: flex;
-	gap: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .menu-nav {
-	list-style: none;
-	display: flex;
-	gap: 1rem;
-	a {
-		color: #fff;
-		text-decoration: none;
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .hero {
-	background: url("../img/hero-bg.png") no-repeat;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 48rem;
+    background: url("../img/hero-bg.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 48rem;
 }
 
 .hero-tagline {
-	color: #fff;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	gap: 2rem;
-	max-width: 60rem;
-	padding-block: 12rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 60rem;
+    padding-block: 12rem;
 }
 
 .btn {
-	padding: 0.75rem 1.25rem;
-	border-radius: 0.5rem;
-	background-color: #fff;
-	display: inline-block;
-	color: #000;
-	text-decoration: none;
-	&:hover {
-		text-decoration: none;
-		background-color: #ececec;
-	}
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        background-color: #ececec;
+    }
 }
 
 main {
-	padding-block: 1rem;
-	flex-grow: 1;
+    padding-block: 1rem;
+    flex-grow: 1;
 }
 
 footer {
-	background-color: #171717;
-	color: #a1a1a1;
-	a {
-		color: #a1a1a1;
-		text-decoration: none;
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+    background-color: #171717;
+    color: #a1a1a1;
+
+    a {
+        color: #a1a1a1;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .footer-container {
-	display: flex;
-	justify-content: space-between;
-	padding-block: 4rem;
-	gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 4rem;
+    gap: 2rem;
 }
 
 .footer-container ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-column h5 {
-	color: #fff;
+    color: #fff;
 }
 
 .footer-column__highlight {
-	color: #ffb900;
-	padding-block: 1rem;
+    color: #ffb900;
+    padding-block: 1rem;
 }
 
 .copyright {
-	padding-block: 1rem;
+    padding-block: 1rem;
+}
+
+/*Página detalle (producto)*/
+.breadcrumbs {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+    padding: .25rem .75rem;
+    background: #FAFAFA;
+    text-align: center;
+    list-style: none;
+    border: 1px solid #b3b5cd;
+    margin-bottom: 0.25rem;
+}
+
+.intern__page {
+    background: #171717;
+}
+
+.book__layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    min-height: 60vh;
+}
+
+.book__media {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    flex: 1 1 180px;
+}
+
+.book__content, .book__more {
+    width: 100%;
+    flex: 2 1 300px;
+}
+
+.book__more {
+    background: #f3f3f3;
+    padding: 1rem 1rem 1.5rem 1rem;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.book__image {
+    max-width: 15rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.book__title, .book__author, .book__category, .book__price {
+    display: block;
+}
+
+.book__price {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.book__technical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book__grp {
+    display: flex;
+    width: 96%;
+    border-radius: 200px;
+    background: #FAFAFA;
+    border: 1px solid #b3b5cd;
+    margin: .5rem 0;
+    padding: 0 .5rem;
+}
+
+.book-page {
+    h2 {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+    }
+}
+
+.technical__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    text-align: center;
+    p {
+        color: grey;
+    }
+    span {
+        color: #171717;
+        display: block;
+    }
+}
+
+.technical__item:nth-child(-n+2) {
+    border-right: 1px solid #b3b5cd;
+}
+
+.book__rating, .book__language {
+    flex-grow: 1;
+}
+
+.book__pages {
+    flex-grow: 2;
+}
+
+.book__synopsis {
+    padding: 0.25rem 0;
+}
+
+.book__addCart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #171717;
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0.5rem 0;
 }

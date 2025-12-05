@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Detalle</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/menu.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detalle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
 
-        <meta name="description" content="">
-        <meta property="og:title" content="">
-        <meta property="og:type" content="">
-        <meta property="og:url" content="">
-        <meta property="og:image" content="">
-        <meta property="og:image:alt" content="">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
 
-        <link rel="icon" href="favicon.ico" sizes="any">
-        <link rel="icon" href="icon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
 
-        <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-<header class="container">
+<header class="container intern__page">
     <div class="logo">
         <img src="img/book.svg" alt="" height="32"/>
         <span>Librería Nexus</span>
@@ -46,12 +46,61 @@
     </nav>
 </header>
 <main class="container book-page">
-    <div class="book__media">
-        <img class="book__image" src="img/book-1.jpg" alt="">
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+            <a href="/">
+                <span>Inicio</span>
+            </a>
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="#">
+                <span>Catálogo</span>
+            </a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item--active">
+            <a aria-current="page" href="/detalle.html">
+                <span>Orgullo y Prejuicio</span>
+            </a>
+        </li>
+    </ul>
+    <div class="book__layout">
+        <div class="book__media">
+            <img class="book__image" src="img/book-1.jpg" alt="">
+        </div>
+        <div class="book__content">
+            <div class="book__info">
+                <h1 class="book__title">Orgullo y Prejuicio</h1>
+                <span class="book__author"><a href="#">Jane Austen</a></span>
+                <span class="book__category">Ficción Romántica</span>
+                <span class="book__price">20.80$</span>
+            </div>
+            <h2>Ficha técnica</h2>
+            <div class="book__technical">
+                <div class="book__grp">
+                    <div class="technical__item book__rating">
+                        <p>Reseñas: <span>4.8</span></p>
+                    </div>
+                    <div class="technical__item book__pages">
+                        <p>Número de páginas: <span>354</span></p>
+                    </div>
+                    <div class="technical__item book__language">
+                        <p>Idioma: <span>Español</span></p>
+                    </div>
+                </div>
+            </div>
+            <button class="book__addCart">Añadir al carrito <span>20.85$</span></button>
+        </div>
+        <div class="book__more">
+            <h2>Sinopsis</h2>
+            <p class="book__synopsis"> Orgullo y prejuicio, publicada en 1813 tras el éxito de Juicio y sentimiento,
+                reúne de forma ejemplar sus temas recurrentes y su visión inimitable en la historia de las cinco hijas
+                de la señora Bennett, que no tiene otro objetivo en su vida que conseguir una buena boda para todas
+                ellas. Dos ricos jóvenes, el señor Bingley y el señor Darcy, aparecen en su punto de mira e
+                inmediatamente se ven señalados como posibles presas. De hecho, la relación entre la hija mayor, Jane, y
+                el señor Bingley parece muy prometedora pero, por influencia del arrogante señor Darcy, se frustran
+                todas las esperanzas.</p>
+        </div>
     </div>
-    <h1>Pride and prejudice</h1>
-    <p>by Jane Austen</p>
-
 </main>
 <footer>
     <div class="container footer-container">
