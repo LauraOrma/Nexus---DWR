@@ -274,6 +274,28 @@ footer {
     justify-content: center;
 }
 
+.book__grpFormat {
+    max-width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+        list-style: none;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.book__itemFormat {
+    width: 48%;
+    margin-bottom: 1rem;
+}
+
 .book__grp {
     display: flex;
     width: 96%;
@@ -299,9 +321,11 @@ footer {
     padding: 0.5rem;
     font-size: 0.85rem;
     text-align: center;
+
     p {
         color: grey;
     }
+
     span {
         color: #171717;
         display: block;
@@ -324,7 +348,7 @@ footer {
     padding: 0.25rem 0;
 }
 
-.book__addCart {
+.btn__primary {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -337,4 +361,8 @@ footer {
     font-weight: bold;
     font-size: 1rem;
     margin: 0.5rem 0;
+}
+
+.btn__secondary {
+
 }
