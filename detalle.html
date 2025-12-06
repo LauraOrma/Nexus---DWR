@@ -1,156 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Detalle</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalle</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
 
-    <meta name="description" content="">
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta property="og:image:alt" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
 
-    <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" href="icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
 
-    <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#fafafa">
 </head>
 <body>
 <header class="container intern__page">
-    <div class="logo">
-        <img src="img/book.svg" alt="" height="32"/>
-        <span>Librería Nexus</span>
-    </div>
+  <div class="logo">
+    <img src="img/book.svg" alt="" height="32"/>
+    <span>Librería Nexus</span>
+  </div>
 
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span class="hamburger"></span>
-    </button>
+  <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <span class="hamburger"></span>
+  </button>
 
-    <nav class="menu">
-        <ul class="menu-nav">
-            <li class="menu-item">
-                <a href="#">Catálogo de Libros</a>
-            </li>
-            <li class="menu-item">
-                <a href="#">Sobre nosotros</a>
-            </li>
-            <li class="menu-item">
-                <a href="#">Ver carrito</a>
-            </li>
-        </ul>
-    </nav>
+  <nav class="menu">
+    <ul class="menu-nav">
+      <li class="menu-item">
+        <a href="#">Catálogo de Libros</a>
+      </li>
+      <li class="menu-item">
+        <a href="#">Sobre nosotros</a>
+      </li>
+      <li class="menu-item">
+        <a href="#">Ver carrito</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 <main class="container book-page">
-    <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-            <a href="/">
-                <span>Inicio</span>
-            </a>
+  <ul class="breadcrumbs">
+    <li class="breadcrumbs__item">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    <li class="breadcrumbs__item">
+      <a href="#">
+        <span>Catálogo</span>
+      </a>
+    </li>
+    <li class="breadcrumbs__item breadcrumbs__item--active">
+      <a aria-current="page" href="detalle.html">
+        <span>Orgullo y Prejuicio</span>
+      </a>
+    </li>
+  </ul>
+  <section aria-label="Información sobre el libro" class="detailBook__layout">
+    <div class="detailBook__media">
+      <img class="detailBook__image" src="img/book-1.jpg" alt="">
+    </div>
+    <div class="detailBook__content">
+      <div class="detailBook__info">
+        <h1 class="detailBook__title">Orgullo y Prejuicio</h1>
+        <span class="detailBook__author"><a href="#">Jane Austen</a></span>
+        <span class="detailBook__category">Ficción Romántica</span>
+        <span class="detailBook__price">20.80$</span>
+      </div>
+      <h2>Formatos disponibles</h2>
+      <ul class="detailBook__grpFormat">
+        <li class="detailBook__itemFormat">
+          <button class="btn__secondary">Ebook</button>
         </li>
-        <li class="breadcrumbs__item">
-            <a href="#">
-                <span>Catálogo</span>
-            </a>
+        <li class="detailBook__itemFormat">
+          <button class="btn__secondary btn__secondary--active">Tapa dura (seleccionado)</button>
         </li>
-        <li class="breadcrumbs__item breadcrumbs__item--active">
-            <a aria-current="page" href="detalle.html">
-                <span>Orgullo y Prejuicio</span>
-            </a>
+        <li class="detailBook__itemFormat">
+          <button class="btn__secondary">Tapa blanda</button>
         </li>
-    </ul>
-    <section aria-label="Información sobre el libro" class="detailBook__layout">
-        <div class="detailBook__media">
-            <img class="detailBook__image" src="img/book-1.jpg" alt="">
+        <li class="detailBook__itemFormat">
+          <button class="btn__secondary">Edición ilustrada</button>
+        </li>
+      </ul>
+      <button class="btn__primary">Añadir al carrito <span>20.85$</span></button>
+    </div>
+    <div class="detailBook__more">
+      <h2>Ficha técnica</h2>
+      <div class="detailBook__technical">
+        <div class="detailBook__grp">
+          <div class="technical__item detailBook__rating">
+            <p>Reseñas: <span>4.8</span></p>
+          </div>
+          <div class="technical__item detailBook__pages">
+            <p>Número de páginas: <span>354</span></p>
+          </div>
+          <div class="technical__item detailBook__language">
+            <p>Idioma: <span>Español</span></p>
+          </div>
         </div>
-        <div class="detailBook__content">
-            <div class="detailBook__info">
-                <h1 class="detailBook__title">Orgullo y Prejuicio</h1>
-                <span class="detailBook__author"><a href="#">Jane Austen</a></span>
-                <span class="detailBook__category">Ficción Romántica</span>
-                <span class="detailBook__price">20.80$</span>
-            </div>
-            <h2>Formatos disponibles</h2>
-            <ul class="detailBook__grpFormat">
-                <li class="detailBook__itemFormat">
-                    <button class="btn__secondary">Ebook</button>
-                </li>
-                <li class="detailBook__itemFormat">
-                    <button class="btn__secondary btn__secondary--active">Tapa dura (seleccionado)</button>
-                </li>
-                <li class="detailBook__itemFormat">
-                    <button class="btn__secondary">Tapa blanda</button>
-                </li>
-                <li class="detailBook__itemFormat">
-                    <button class="btn__secondary">Edición ilustrada</button>
-                </li>
-            </ul>
-            <button class="btn__primary">Añadir al carrito <span>20.85$</span></button>
-        </div>
-        <div class="detailBook__more">
-            <h2>Ficha técnica</h2>
-            <div class="detailBook__technical">
-                <div class="detailBook__grp">
-                    <div class="technical__item detailBook__rating">
-                        <p>Reseñas: <span>4.8</span></p>
-                    </div>
-                    <div class="technical__item detailBook__pages">
-                        <p>Número de páginas: <span>354</span></p>
-                    </div>
-                    <div class="technical__item detailBook__language">
-                        <p>Idioma: <span>Español</span></p>
-                    </div>
-                </div>
-            </div>
-            <h2>Sinopsis</h2>
-            <p class="detailBook__synopsis"> Orgullo y prejuicio, publicada en 1813 tras el éxito de Juicio y sentimiento,
-                reúne de forma ejemplar sus temas recurrentes y su visión inimitable en la historia de las cinco hijas
-                de la señora Bennett, que no tiene otro objetivo en su vida que conseguir una buena boda para todas
-                ellas. Dos ricos jóvenes, el señor Bingley y el señor Darcy, aparecen en su punto de mira e
-                inmediatamente se ven señalados como posibles presas. De hecho, la relación entre la hija mayor, Jane, y
-                el señor Bingley parece muy prometedora pero, por influencia del arrogante señor Darcy, se frustran
-                todas las esperanzas.</p>
-        </div>
-    </section>
+      </div>
+      <h2>Sinopsis</h2>
+      <p class="detailBook__synopsis"> Orgullo y prejuicio, publicada en 1813 tras el éxito de Juicio y sentimiento,
+        reúne de forma ejemplar sus temas recurrentes y su visión inimitable en la historia de las cinco hijas
+        de la señora Bennett, que no tiene otro objetivo en su vida que conseguir una buena boda para todas
+        ellas. Dos ricos jóvenes, el señor Bingley y el señor Darcy, aparecen en su punto de mira e
+        inmediatamente se ven señalados como posibles presas. De hecho, la relación entre la hija mayor, Jane, y
+        el señor Bingley parece muy prometedora pero, por influencia del arrogante señor Darcy, se frustran
+        todas las esperanzas.</p>
+    </div>
+  </section>
 </main>
 <footer>
-    <div class="container footer-container">
-        <div class="footer-column">
-            <div class="logo">
-                <img src="img/book.svg" alt="" height="32"/>
-                <span>Librería Nexus</span>
-            </div>
-        </div>
-        <div class="footer-column">
-            <h5>Enlaces rápidos</h5>
-            <ul>
-                <li><a href="#">Catálogo de Libros</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h5>Horario</h5>
-            <p>Monday - Friday: 7am - 10pm</p>
-            <p>Saturday: 8am - 11pm</p>
-            <p class="footer-column__highlight">24/7 para miembros</p>
-        </div>
-        <div class="footer-column">
-            <h5>Contacto</h5>
-            <p>Book District, BD 12345</p>
-            <p>(555) 123-4567</p>
-            <p><a href="#">hello@librerianexus.com</a></p>
-        </div>
+  <div class="container footer-container">
+    <div class="footer-column">
+      <div class="logo">
+        <img src="img/book.svg" alt="" height="32"/>
+        <span>Librería Nexus</span>
+      </div>
     </div>
+    <div class="footer-column">
+      <h5>Enlaces rápidos</h5>
+      <ul>
+        <li><a href="#">Catálogo de Libros</a></li>
+        <li><a href="#">Sobre nosotros</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h5>Horario</h5>
+      <p>Monday - Friday: 7am - 10pm</p>
+      <p>Saturday: 8am - 11pm</p>
+      <p class="footer-column__highlight">24/7 para miembros</p>
+    </div>
+    <div class="footer-column">
+      <h5>Contacto</h5>
+      <p>Book District, BD 12345</p>
+      <p>(555) 123-4567</p>
+      <p><a href="#">hello@librerianexus.com</a></p>
+    </div>
+  </div>
 </footer>
 
 <section class="copyright">
-    <div class="container">
-        <p>© 2025 Librería Nexus. Todos los derechos reservados</p>
-    </div>
+  <div class="container">
+    <p>© 2025 Librería Nexus. Todos los derechos reservados</p>
+  </div>
 </section>
 </body>
 </html>
