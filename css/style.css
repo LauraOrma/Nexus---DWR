@@ -224,7 +224,7 @@ footer {
     background: #171717;
 }
 
-.book__layout {
+.detailBook__layout {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -233,7 +233,7 @@ footer {
     min-height: 60vh;
 }
 
-.book__media {
+.detailBook__media {
     width: 100%;
     display: flex;
     align-items: center;
@@ -242,45 +242,46 @@ footer {
     flex: 1 1 180px;
 }
 
-.book__content, .book__more {
+.detailBook__content, .detailBook__more {
     width: 100%;
     flex: 2 1 300px;
 }
 
-.book__more {
+.detailBook__more {
     background: #f3f3f3;
     padding: 1rem 1rem 1.5rem 1rem;
     height: 100%;
     border-radius: 0.5rem;
 }
 
-.book__image {
+.detailBook__image {
     max-width: 15rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.book__title, .book__author, .book__category, .book__price {
+.detailBook__title, .detailBook__author, .detailBook__category, .detailBook__price {
     display: block;
 }
 
-.book__price {
+.detailBook__price {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.book__technical {
+.detailBook__technical {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.book__grpFormat {
+.detailBook__grpFormat {
     max-width: 100%;
-    padding: 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem 0 1.5rem 0;
 
     li {
         list-style: none;
@@ -291,12 +292,11 @@ footer {
     }
 }
 
-.book__itemFormat {
-    width: 48%;
-    margin-bottom: 1rem;
+.detailBook__itemFormat {
+    flex: 1 1 200px;
 }
 
-.book__grp {
+.detailBook__grp {
     display: flex;
     width: 96%;
     border-radius: 200px;
@@ -336,15 +336,15 @@ footer {
     border-right: 1px solid #b3b5cd;
 }
 
-.book__rating, .book__language {
+.detailBook__rating, .detailBook__language {
     flex-grow: 1;
 }
 
-.book__pages {
+.detailBook__pages {
     flex-grow: 2;
 }
 
-.book__synopsis {
+.detailBook__synopsis {
     padding: 0.25rem 0;
 }
 
@@ -364,5 +364,22 @@ footer {
 }
 
 .btn__secondary {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    background: none;
+    color: #037bc0;
+    border: 1px solid #037bc0;
+    width: 100%;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
 }
+
+.btn__secondary--active {
+    border-color: #037bc0;
+    background: #037bc0;
+    color: white;
+}
+
