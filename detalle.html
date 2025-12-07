@@ -3,7 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Detalle</title>
+  <title>Orgullo y prejuicio - Libreria Nexus</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Raleway:wght@400;700;900&amp;display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./fonts/fontawesome-free-6.1.2-web/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menu.css">
 
@@ -21,39 +27,42 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-<header class="container intern__page">
-  <div class="logo">
-    <img src="img/book.svg" alt="" height="32"/>
-    <span>Librería Nexus</span>
-  </div>
+<div class="intern__page">
+  <header class="container">
+    <a href="index.html" class="logo">
+      <img src="img/book.svg" alt="Ir a la página de inicio" height="32"/>
+      <span>Librería Nexus</span>
+    </a>
 
-  <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-    <span class="hamburger"></span>
-  </button>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
 
-  <nav class="menu">
-    <ul class="menu-nav">
-      <li class="menu-item">
-        <a href="#">Catálogo de Libros</a>
-      </li>
-      <li class="menu-item">
-        <a href="#">Sobre nosotros</a>
-      </li>
-      <li class="menu-item">
-        <a href="#">Ver carrito</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main class="container book-page">
-  <ul class="breadcrumbs">
+    <nav class="menu">
+      <ul class="menu-nav">
+        <li class="menu-item">
+          <a href="catalogo.html">Catálogo de Libros</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Sobre nosotros</a>
+        </li>
+        <li class="menu-item">
+          <button class="cart__toggle" id="cart-toggle">Ver carrito <span class="cart-badge" id="cart-count">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<main class="book-page">
+  <ul class=" container breadcrumbs">
     <li class="breadcrumbs__item">
       <a href="index.html">
         <span>Inicio</span>
       </a>
     </li>
     <li class="breadcrumbs__item">
-      <a href="#">
+      <a href="catalogo.html">
         <span>Catálogo</span>
       </a>
     </li>
@@ -63,57 +72,172 @@
       </a>
     </li>
   </ul>
-  <section aria-label="Información sobre el libro" class="detailBook__layout">
-    <div class="detailBook__media">
-      <img class="detailBook__image" src="img/book-1.jpg" alt="">
-    </div>
-    <div class="detailBook__content">
-      <div class="detailBook__info">
-        <h1 class="detailBook__title">Orgullo y Prejuicio</h1>
-        <span class="detailBook__author"><a href="#">Jane Austen</a></span>
-        <span class="detailBook__category">Ficción Romántica</span>
-        <span class="detailBook__price">20.80$</span>
+  <section aria-label="Información sobre el libro" class="container">
+    <div class="detailBook__layout">
+      <div class="detailBook__media">
+        <img class="detailBook__image" src="img/book-1.jpg" alt="">
       </div>
-      <h2>Formatos disponibles</h2>
-      <ul class="detailBook__grpFormat">
-        <li class="detailBook__itemFormat">
-          <button class="btn__secondary">Ebook</button>
-        </li>
-        <li class="detailBook__itemFormat">
-          <button class="btn__secondary btn__secondary--active">Tapa dura (seleccionado)</button>
-        </li>
-        <li class="detailBook__itemFormat">
-          <button class="btn__secondary">Tapa blanda</button>
-        </li>
-        <li class="detailBook__itemFormat">
-          <button class="btn__secondary">Edición ilustrada</button>
-        </li>
-      </ul>
-      <button class="btn__primary">Añadir al carrito <span>20.85$</span></button>
+      <div class="detailBook__content">
+        <div class="detailBook__info">
+          <h1 class="detailBook__title">Orgullo y Prejuicio</h1>
+          <span class="detailBook__author"><a href="#">Jane Austen</a></span>
+          <span class="detailBook__category">Ficción Romántica</span>
+          <span class="detailBook__price">20.80$</span>
+        </div>
+        <h2>Formatos disponibles</h2>
+        <ul class="detailBook__grpFormat">
+          <li class="detailBook__itemFormat">
+            <button class="btn__secondary">Ebook</button>
+          </li>
+          <li class="detailBook__itemFormat">
+            <button class="btn__secondary btn__secondary--active">Tapa dura (seleccionado)</button>
+          </li>
+          <li class="detailBook__itemFormat">
+            <button class="btn__secondary">Tapa blanda</button>
+          </li>
+          <li class="detailBook__itemFormat">
+            <button class="btn__secondary">Edición ilustrada</button>
+          </li>
+        </ul>
+        <button class="btn__primary btn__primary--price addToCart">Añadir al carrito <span>20.85$</span></button>
+      </div>
+      <div class="detailBook__more">
+        <h2>Ficha técnica</h2>
+        <div class="detailBook__technical">
+          <div class="detailBook__grp">
+            <div class="technical__item detailBook__rating">
+              <p>Reseñas: <span>5 <i class="fa-solid fa-star info__icon"></i></span></p>
+            </div>
+            <div class="technical__item detailBook__pages">
+              <p>Número de páginas: <span>354</span></p>
+            </div>
+            <div class="technical__item detailBook__language">
+              <p>Idioma: <span>Español</span></p>
+            </div>
+          </div>
+        </div>
+        <h2>Sinopsis</h2>
+        <p class="detailBook__synopsis"> Orgullo y prejuicio, publicada en 1813 tras el éxito de Juicio y sentimiento,
+          reúne de forma ejemplar sus temas recurrentes y su visión inimitable en la historia de las cinco hijas
+          de la señora Bennett, que no tiene otro objetivo en su vida que conseguir una buena boda para todas
+          ellas. Dos ricos jóvenes, el señor Bingley y el señor Darcy, aparecen en su punto de mira e
+          inmediatamente se ven señalados como posibles presas. De hecho, la relación entre la hija mayor, Jane, y
+          el señor Bingley parece muy prometedora pero, por influencia del arrogante señor Darcy, se frustran
+          todas las esperanzas.</p>
+      </div>
     </div>
-    <div class="detailBook__more">
-      <h2>Ficha técnica</h2>
-      <div class="detailBook__technical">
-        <div class="detailBook__grp">
-          <div class="technical__item detailBook__rating">
-            <p>Reseñas: <span>4.8</span></p>
+  </section>
+  <section class="container__catalog">
+    <div class="container">
+      <div class="catalog__title">
+        <div class="title__titles">
+          <h2>Podría interesarte</h2>
+        </div>
+      </div>
+
+      <div class="catalog__books">
+        <div class="books__card">
+          <div class="overflow__img">
+            <div class="card__img">
+              <img src="img/book-2.jpg" alt=""/>
+            </div>
           </div>
-          <div class="technical__item detailBook__pages">
-            <p>Número de páginas: <span>354</span></p>
+          <div class="card__info">
+            <h3>Cien años de soledad</h3>
+            <p class="card__author">Gabriel García Márquez</p>
+            <p class="card__price">$24.99</p>
+            <div class="container__icon">
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+            </div>
+            <div class="info__container">
+              <button class="btn__primary">
+                <i class="fa-solid fa-cart-shopping"></i>Añadir
+              </button>
+              <a class="btn__secondary" href="detalle.html">Ver ficha</a>
+            </div>
           </div>
-          <div class="technical__item detailBook__language">
-            <p>Idioma: <span>Español</span></p>
+        </div>
+        <div class="books__card">
+          <div class="overflow__img">
+            <div class="card__img">
+              <img src="img/book-3.jpg" alt=""/>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3>La sombra del viento</h3>
+            <p class="card__author">Carlos Ruiz Zafón</p>
+            <p class="card__price">$24.99</p>
+            <div class="container__icon">
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+            </div>
+            <div class="info__container">
+              <button class="btn__primary">
+                <i class="fa-solid fa-cart-shopping"></i>Añadir
+              </button>
+              <a class="btn__secondary" href="detalle.html">Ver ficha</a>
+            </div>
+          </div>
+        </div>
+        <div class="books__card">
+          <div class="overflow__img">
+            <div class="card__img">
+              <img src="img/book-1.jpg" alt=""/>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3>Orgullo y prejuicio</h3>
+            <p class="card__author">Jane Austen</p>
+            <p class="card__price">$24.99</p>
+            <div class="container__icon">
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+            </div>
+            <div class="info__container">
+              <button class="btn__primary">
+                <i class="fa-solid fa-cart-shopping"></i>Añadir
+              </button>
+              <a class="btn__secondary" href="detalle.html">Ver ficha</a>
+            </div>
+          </div>
+        </div>
+        <div class="books__card">
+          <div class="overflow__img">
+            <div class="card__img">
+              <img src="img/book-4.jpg" alt=""/>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3>La casa de los espíritus</h3>
+            <p class="card__author">Isabel Allende</p>
+            <p class="card__price">$24.99</p>
+            <div class="container__icon">
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+            </div>
+            <div class="info__container">
+              <button class="btn__primary">
+                <i class="fa-solid fa-cart-shopping"></i>Añadir
+              </button>
+              <a class="btn__secondary" href="detalle.html">Ver ficha</a>
+            </div>
           </div>
         </div>
       </div>
-      <h2>Sinopsis</h2>
-      <p class="detailBook__synopsis"> Orgullo y prejuicio, publicada en 1813 tras el éxito de Juicio y sentimiento,
-        reúne de forma ejemplar sus temas recurrentes y su visión inimitable en la historia de las cinco hijas
-        de la señora Bennett, que no tiene otro objetivo en su vida que conseguir una buena boda para todas
-        ellas. Dos ricos jóvenes, el señor Bingley y el señor Darcy, aparecen en su punto de mira e
-        inmediatamente se ven señalados como posibles presas. De hecho, la relación entre la hija mayor, Jane, y
-        el señor Bingley parece muy prometedora pero, por influencia del arrogante señor Darcy, se frustran
-        todas las esperanzas.</p>
+
     </div>
   </section>
 </main>
@@ -152,5 +276,9 @@
     <p>© 2025 Librería Nexus. Todos los derechos reservados</p>
   </div>
 </section>
+
+<script src="js/app.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>

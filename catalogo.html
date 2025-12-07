@@ -1,10 +1,9 @@
-<!doctype html>
-<html class="no-js" lang="es">
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nexus</title>
+  <title>Orgullo y prejuicio - Libreria Nexus</title>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Raleway:wght@400;700;900&amp;display=swap"
@@ -13,69 +12,71 @@
   <link rel="stylesheet" href="./fonts/fontawesome-free-6.1.2-web/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menu.css">
-  <meta name="description" content="">
 
+  <meta name="description" content="">
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
   <meta name="theme-color" content="#fafafa">
 </head>
-
 <body>
-<div class="wrapper">
+<div class="intern__page">
+  <header class="container">
+    <a href="index.html" class="logo">
+      <img src="img/book.svg" alt="Ir a la página de inicio" height="32"/>
+      <span>Librería Nexus</span>
+    </a>
 
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
 
-  <div class="hero">
-
-    <header class="container">
-      <a href="index.html" class="logo">
-        <img src="img/book.svg" alt="Ir a la página de inicio" height="32"/>
-        <span>Librería Nexus</span>
-      </a>
-
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span class="hamburger"></span>
-      </button>
-
-      <nav class="menu">
-        <ul class="menu-nav">
-          <li class="menu-item">
-            <a href="catalogo.html">Catálogo de Libros</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Sobre nosotros</a>
-          </li>
-          <li class="menu-item">
-            <button class="cart__toggle" id="cart-toggle">Ver carrito <span class="cart-badge" id="cart-count">0</span>
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="hero-tagline">
-      <h1>¡Bienvenidos a Librería Nexus!</h1>
-      <a href="#" class="btn">Ver todos los libros</a>
-    </section>
-  </div>
-
-
+    <nav class="menu">
+      <ul class="menu-nav">
+        <li class="menu-item">
+          <a href="catalogo.html">Catálogo de Libros</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Sobre nosotros</a>
+        </li>
+        <li class="menu-item">
+          <button class="cart__toggle" id="cart-toggle">Ver carrito <span class="cart-badge" id="cart-count">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<main class="book-page">
   <section class="container__catalog">
+    <ul class=" container breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="index.html">
+          <span>Inicio</span>
+        </a>
+      </li>
+      <li class="breadcrumbs__item breadcrumbs__item--active">
+        <a href="catalogo.html">
+          <span>Catálogo</span>
+        </a>
+      </li>
+    </ul>
     <div class="container">
       <div class="catalog__title">
         <div class="title__titles">
-          <h2>Los más vendidos</h2>
+          <h1>Nuestro catálogo</h1>
         </div>
       </div>
 
       <div class="catalog__books">
+
         <div class="books__card">
           <div class="overflow__img">
             <div class="card__img">
@@ -101,6 +102,7 @@
             </div>
           </div>
         </div>
+
         <div class="books__card">
           <div class="overflow__img">
             <div class="card__img">
@@ -126,6 +128,7 @@
             </div>
           </div>
         </div>
+
         <div class="books__card">
           <div class="overflow__img">
             <div class="card__img">
@@ -151,6 +154,7 @@
             </div>
           </div>
         </div>
+
         <div class="books__card">
           <div class="overflow__img">
             <div class="card__img">
@@ -176,29 +180,17 @@
             </div>
           </div>
         </div>
-      </div>
 
-    </div>
-  </section>
-
-  <section class="container">
-    <div class="container__monthBook">
-      <div class="catalog__title">
-        <div class="title__titles">
-          <h2>Nuestro club de lectura</h2>
-        </div>
-      </div>
-      <div class="monthbook__layout">
         <div class="books__card">
           <div class="overflow__img">
             <div class="card__img">
-              <img src="img/book-2.jpg" alt=""/>
+              <img src="img/book-8.jpg" alt=""/>
             </div>
           </div>
           <div class="card__info">
-            <h3>Cien años de soledad</h3>
-            <p class="card__author">Gabriel García Márquez</p>
-            <p class="card__price">$24.99</p>
+            <h3>La mujer de arriba</h3>
+            <p class="card__author">Freida McFadden</p>
+            <p class="card__price">$8.95</p>
             <div class="container__icon">
               <i class="fa-solid fa-star info__icon"></i>
               <i class="fa-solid fa-star info__icon"></i>
@@ -214,84 +206,125 @@
             </div>
           </div>
         </div>
-        <div class="monthBook__info">
-          <h4>¿Te apetece leer acompañado?</h4>
-          <p>
-            En nuestro club de lectura elegimos cada mes un libro para que lo disfrutemos juntos,
-            a nuestro ritmo y sin presiones. Solo necesitas ganas de leer y curiosidad por descubrir
-            nuevas historias.
-          </p>
-          <h5>Ficha técnica</h5>
-          <div class="detailBook__technical">
-            <div class="detailBook__grp">
-              <div class="technical__item detailBook__rating">
-                <p>Reseñas: <span>5 <i class="fa-solid fa-star info__icon"></i></span></p>
-              </div>
-              <div class="technical__item detailBook__pages">
-                <p>Número de páginas: <span>400</span></p>
-              </div>
-              <div class="technical__item detailBook__language">
-                <p>Idioma: <span>Español</span></p>
-              </div>
+
+        <div class="books__card">
+          <div class="overflow__img">
+            <div class="card__img">
+              <img src="img/book-5.jpg" alt=""/>
             </div>
           </div>
-          <p>
-            Este mes hemos elegido <strong>Cien años de soledad</strong>, un clásico inolvidable lleno
-            de magia, memoria y familias que se cruzan una y otra vez. Iremos comentando los capítulos,
-            compartiendo teorías y frases favoritas, y viendo cómo cada persona vive la historia de forma distinta.
-          </p>
-          <p>
-            Puedes unirte cuando quieras: compra el libro, léelo como te venga mejor y vuelve para comentar.
-            La idea es sentir que no lees solo, sino acompañado de otras personas que también se emocionan,
-            se sorprenden y se enganchan página a página.
-          </p>
-          <a class="btn__secondary btn__secondary--format" href="#">Únete al club</a>
+          <div class="card__info">
+            <h3>El último secreto</h3>
+            <p class="card__author">Dan Brown</p>
+            <p class="card__price">$30.99</p>
+            <div class="container__icon">
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+            </div>
+            <div class="info__container">
+              <button class="btn__primary">
+                <i class="fa-solid fa-cart-shopping"></i>Añadir
+              </button>
+              <a class="btn__secondary" href="detalle.html">Ver ficha</a>
+            </div>
+          </div>
+        </div>
+        <div class="books__card">
+          <div class="overflow__img">
+            <div class="card__img">
+              <img src="img/book-6.jpg" alt=""/>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3>1984</h3>
+            <p class="card__author">George Orwell</p>
+            <p class="card__price">$16.50</p>
+            <div class="container__icon">
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+            </div>
+            <div class="info__container">
+              <button class="btn__primary">
+                <i class="fa-solid fa-cart-shopping"></i>Añadir
+              </button>
+              <a class="btn__secondary" href="detalle.html">Ver ficha</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="books__card">
+          <div class="overflow__img">
+            <div class="card__img">
+              <img src="img/book-7.jpg" alt=""/>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3>Drácula</h3>
+            <p class="card__author">Bram Stoker</p>
+            <p class="card__price">$21.75</p>
+            <div class="container__icon">
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+              <i class="fa-solid fa-star info__icon"></i>
+            </div>
+            <div class="info__container">
+              <button class="btn__primary">
+                <i class="fa-solid fa-cart-shopping"></i>Añadir
+              </button>
+              <a class="btn__secondary" href="detalle.html">Ver ficha</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-  <footer>
-    <div class="container footer-container">
-      <div class="footer-column">
-        <div class="logo">
-          <img src="img/book.svg" alt="" height="32"/>
-          <span>Librería Nexus</span>
-        </div>
-      </div>
-      <div class="footer-column">
-        <h5>Enlaces rápidos</h5>
-        <ul>
-          <li><a href="#">Catálogo de Libros</a></li>
-          <li><a href="#">Sobre nosotros</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h5>Horario</h5>
-        <p>Lunes a viernes: 7:00 a.m. - 10:00 p.m.</p>
-        <p>Sábado: 8:00 a.m. - 11:00 p.m.</p>
-        <p class="footer-column__highlight">24/7 para miembros</p>
-      </div>
-      <div class="footer-column">
-        <h5>Contacto</h5>
-        <p>Book District, BD 12345</p>
-        <p>(555) 123-4567</p>
-        <p><a href="#">hello@librerianexus.com</a></p>
+</main>
+<footer>
+  <div class="container footer-container">
+    <div class="footer-column">
+      <div class="logo">
+        <img src="img/book.svg" alt="" height="32"/>
+        <span>Librería Nexus</span>
       </div>
     </div>
-  </footer>
-
-  <section class="copyright">
-    <div class="container">
-      <p>© 2025 Librería Nexus. Todos los derechos reservados</p>
+    <div class="footer-column">
+      <h5>Enlaces rápidos</h5>
+      <ul>
+        <li><a href="#">Catálogo de Libros</a></li>
+        <li><a href="#">Sobre nosotros</a></li>
+      </ul>
     </div>
-  </section>
+    <div class="footer-column">
+      <h5>Horario</h5>
+      <p>Monday - Friday: 7am - 10pm</p>
+      <p>Saturday: 8am - 11pm</p>
+      <p class="footer-column__highlight">24/7 para miembros</p>
+    </div>
+    <div class="footer-column">
+      <h5>Contacto</h5>
+      <p>Book District, BD 12345</p>
+      <p>(555) 123-4567</p>
+      <p><a href="#">hello@librerianexus.com</a></p>
+    </div>
+  </div>
+</footer>
 
-</div>
+<section class="copyright">
+  <div class="container">
+    <p>© 2025 Librería Nexus. Todos los derechos reservados</p>
+  </div>
+</section>
 
 <script src="js/app.js"></script>
 <script src="js/cart.js"></script>
 <script src="js/menu.js"></script>
 </body>
-
 </html>
