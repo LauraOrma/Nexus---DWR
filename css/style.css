@@ -409,13 +409,13 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 1rem 0 1rem 0;
-  flex: 1 1 180px;
+  flex: 1 1 11.25rem;
 }
 
 .detailBook__content,
 .detailBook__more {
   width: 100%;
-  flex: 2 1 300px;
+  flex: 2 1 18.75rem;
 }
 
 .detailBook__more {
